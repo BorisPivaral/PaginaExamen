@@ -1,0 +1,34 @@
+body{
+    background-image: url("../images/background.jpg");
+    font-family: 'Comfortaa', cursive;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+}
+
+* {
+    box-sizing: border-box;
+    margin: auto;
+    padding: 0;
+    color: rgb(250, 255, 181);
+}
+
+
+table{
+    background-color: rgba(138, 99, 255, 0.4);
+}
+
+footer{
+    align-self: flex-end;
+    color: #8a63ff;
+    background-color: #191621;
+    width: 100%;
+    height: 100%;
+    font-size: 14pt;
+    font-family: 'Comfortaa', cursive;
+    text-align: center;
+}
+
+footer p{
+    padding-top: 10px;
+}

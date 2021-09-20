@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Delius+Unicase:wght@700&display=swap');
+body {
+    background-image: url("../images/background.jpg");
+}
+h1 {
+    text-align: center;
+    color: rgb(253, 255, 230);
+}
+h4 {
+    font-size: 16px;
+    font-weight: 700;
+}
+header {
+    padding: 20px 0 0 0;
+    background: #191621;
+    text-align: center;
+}
+
+@media (min-width : 750px) {
+    header {
+        text-align: left;
+    }
+}
+
+.borrar-platilo {
+    background-color: #fbaf32;
+    border-radius: 50%;
+    padding: 5px 10px;
+    text-decoration: none;
+    color:rgb(71, 71, 71);
+    font-weight: bold;
+
+}
+
+ul {
+    list-style: none;
+}
+
+.hero {
+    background-image: url(../images/banner2.jpg);
+    background-size: cover;
+    height: 550px;
+}
+.encabezado {
+    margin: 30px 0;
+    color: rgb(250, 255, 181);
+    font-family: 'Delius Unicase', cursive;
+}
+.submenu {
+    position: relative;
+}
+.submenu #carrito{
+    display: none;
+}
+.submenu:hover #carrito{
+    display: block;
+    color: white;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    z-index: 1;
+    background: #17181b;
+    padding: 20px;
+}
+.vacio {
+    padding: 10px;
+    background-color: rgb(250, 255, 181);
+    text-align: center;
+    border-radius: 10px;
+    color: #8a63ff;
+    font-family: 'Delius Unicase', cursive;
+}
+.button {
+    background-color: rgb(250, 255, 181);
+    color: #8a63ff;
+    font-family: 'Delius Unicase', cursive;
+}
+.contenido-hero {
+    margin-top: 80px;
+    color: white;
+    font-family: 'Delius Unicase', cursive;
+    border: none;
+}
+.contenido-hero form {
+    position: relative;
+    margin-bottom: 0;
+}
+.contenido-hero form #buscador {
+    height: 50px;
+    margin-bottom: 0;
+}
+.contenido-hero form .submit-buscador {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    padding: 0;
+    display: block;
+    text-indent: -9999px;
+    width: 50px;
+    background-image: url(../img/lupa.png);
+    background-position: right center;
+    background-repeat: no-repeat;
+    border: none;
+}
+
+.barra {
+    padding: 20px 0;
+    background: #8a63ff;
+    background: -webkit-linear-gradient(left, #8a63ff 0%,#8a63ff 100% );
+}
+.barra p {
+    margin: 0;
+    color: rgb(253, 255, 230);
+    font-family: 'Comfortaa', cursive;
+}
+.icono {
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 60px;
+    background-size: 30px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+@media (min-width: 750px) {
+    .icono {
+        margin-bottom: 0;
+    }
+}
+
+#lista-productos .row {
+    margin-bottom: 20px;
+}
+.agregar-carrito{
+    margin: 10px 0;
+}
+.card {
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 25px;
+    background: rgba(138, 99, 255, 0.4);
+}
+@media (min-width:550px){
+    .card {
+        text-align: left;
+    }
+}
+.info-card {
+    padding: 10px 20px;
+    color: white;
+}
+.info-card p,
+.card h4 {
+    margin-bottom: 5px;
+}
+.info-card .precio {
+    text-decoration: line-through;
+    font-size: 18px;
+    margin-top: 10px;
+}
+.info-card .precio span {
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.footer {
+    margin-top: 40px;
+    padding-top: 40px;
+    height: 125px;
+    background: #191621;
+    font-family: 'Comfortaa', cursive;
+    color: #8a63ff;
+    text-align: center;
+}
+
+/*Propiedades del menu*/
+.menu{
+    font-family: 'Delius Unicase', cursive;
+    height: 75px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo{
+    max-width: 65px;
+    padding-left: 10px;
+    margin-right: 25px;
+}
+
+.menu_items{
+    display: flex;
+    list-style: none;
+    margin-right: 30px;
+}
+.menu_items li{
+    border-radius: 3px;
+    margin: 0 5px;
+}
+
+.menu_items li a{
+    padding: 7px 13px;
+    font-size: 18px;
+    text-decoration: none;
+    display: block;
+    color: rgb(250, 255, 181);
+}
+
+.login a{
+    background-color: #8a63ff;
+    border-radius: 50px;
+}
+
+
+.menu_items a:hover{
+    color:  #8a63ff;
+    background-color: rgb(250, 255, 181);
+    border-radius: 10px;
+    transition:  all 0.3s ease 0s;
+}
+
+.menu_items .active a{
+    color:  #8a63ff;
+    background-color: rgb(250, 255, 181);
+    border-radius: 10px;
+}
+
+
+.login a:hover{
+    border-radius: 50px;
+}
+
+.btn_menu{
+    margin-right: 30px;
+    font-size: 25px;
+    color:  rgb(250, 255, 181);
+    cursor: pointer;
+    display: none;
+}
+
+
+ul.show{
+    top: 65px;
+}
+
+
+
+

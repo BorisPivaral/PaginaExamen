@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse</title>
+    <link rel="stylesheet" href="../css/stylesform.css">
+    <link rel="shortcut icon" href="../images/icon.ico" />
+    <script src="https://kit.fontawesome.com/c1eae85dfa.js" crossorigin="anonymous"></script>
+    <script src="../Javascript/script.js" ></script>
+</head>
+<body>
+    <nav class="menu">
+        <a href="../index.html" class="logo" ><img class="logo" src="../images/logob.png" alt="logo"></a>
+        <ul class="menu_items" id="otroModo">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="ofertas.html">Ofertas</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li class="login"><a  href="login.html">Login</a></li>
+        </ul>
+        <span class="btn_menu">
+            <i class="fa fa-bars"></i>    
+        </span>
+    </nav>
+
+
+    <div class="cuerpo"></div>
+    <form class="form">
+        <img src="../images/logo.png" alt="logo" class="logoform">
+        <h2 class="formtitle">Registrarse</h2>
+        <p class="formparraf">¿Ya tienes una cuenta?</p> <a href="login.html" class="formlink" >Inicia Sesion</a>
+        
+        <div class="formcontainer">
+            <div class="formgroup">
+                <input type="text" id="nombre" class="forminput" placeholder="Ejemplo: Juan" required>
+                <label for="nombre" class="formlabel">Nombre</label>
+                <span class="formline"></span>
+            </div>
+            <div class="formgroup">
+                <input type="text" id="apellido" class="forminput" placeholder="Ejemplo: Hernandez" required>
+                <label for="apellido" class="formlabel">Apellido</label>
+                <span class="formline"></span>
+            </div>
+            <div class="formgroup">
+                <input type="email" id="email" class="forminput" placeholder="tucorreo@example.com" required>
+                <label for="email" class="formlabel">Correo Electronico</label>
+                <span class="formline"></span>
+            </div>
+            <div class="formgroup">
+                <input type="password" id="password" class="forminput" placeholder=" " required>
+                <label for="password" class="formlabel">Contraseña</label>
+                <span class="formline"></span>
+            </div>
+            <div class="formgroup">
+                <input type="password" id="password" class="forminput" placeholder=" " required>
+                <label for="password" class="formlabel">Repite tu contraseña</label>
+                <span class="formline"></span>
+            </div>
+
+            <input type="submit" class="formsubmit" value="Registarse">
+        </div>
+    
+    </form>
+    </div>
+
+    <footer>
+        <p>Todos los derechos reservados D'ahuevo® 2021</p>
+        <br>
+        <p>contacto: dahuevo@gmail.com</p>
+        <br>
+        <a href="../pages/loginadmin.html">Administrar Pagina</a>
+    </footer>
+
+</body>
+</html>

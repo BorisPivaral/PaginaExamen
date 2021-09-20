@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Delius+Unicase:wght@700&display=swap');
+/*Propiedades de la pagina*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url("../images/background.jpg");
+}
+
+/*Prodiedades del header y Menu*/
+
+/*Propiedades del menu*/
+.menu{
+    font-family: 'Delius Unicase', cursive;
+    background-color: #191621;
+    height: 75px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 5px 0 10px rgba(0, 0, 0, .6);
+}
+
+.logo{
+    max-width: 65px;
+    padding-left: 10px;
+}
+
+.menu_items{
+    display: flex;
+    list-style: none;
+    margin-right: 30px;
+}
+.menu_items li{
+    border-radius: 3px;
+    margin: 0 5px;
+}
+
+.menu_items li a{
+    padding: 7px 13px;
+    font-size: 18px;
+    text-decoration: none;
+    display: block;
+    color: rgb(250, 255, 181);
+}
+
+.login a{
+    background-color: #8a63ff;
+    border-radius: 50px;
+}
+
+
+.menu_items a:hover{
+    color:  #8a63ff;
+    background-color: rgb(250, 255, 181);
+    border-radius: 10px;
+    transition:  all 0.3s ease 0s;
+}
+
+.menu_items .active a{
+    color:  #8a63ff;
+    background-color: rgb(250, 255, 181);
+    border-radius: 10px;
+}
+
+
+.login a:hover{
+    border-radius: 50px;
+}
+
+.btn_menu{
+    margin-right: 30px;
+    font-size: 25px;
+    color:  rgb(250, 255, 181);
+    cursor: pointer;
+    display: none;
+}
+
+
+ul.show{
+    top: 65px;
+}
+
+
+
+/*Propiedades del Body*/
+/* Estilo productos*/
+section{
+width: 100%;
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+padding: 50px 0;
+}
+
+.box{
+width: 33.33%;
+}
+
+.card{
+    font-family: 'Comfortaa', cursive;
+    color: rgb(253, 255, 230);
+    width: 30%;
+}
+
+.card h3{
+    font-family: 'Comfortaa', cursive;
+    text-decoration: none;
+    color: rgb(253, 255, 230);
+}
+
+.card a:hover{
+    text-decoration: underline;
+}
+
+.card .imgcontainer{
+    margin: auto;
+    overflow: hidden;
+    height: 250px;
+    width: 400px;
+    position: relative;
+    background-color: white;
+}
+
+
+.card .imgcontainer img{
+    width: 100%;
+    position:absolute;
+    transition: all 0.5s;;
+}
+
+.card:hover .imgcontainer img{
+    transform: scale(1.2);
+}
+
+
+.card .imgcontainer .promo{
+    position: absolute;
+    top: 10px;
+    left: 0;
+    font-size: 20px;
+    background: rgb(250, 255, 181);
+    color: black;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    padding: 5px;
+    padding-right: 15px;
+}
+
+.card .info{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 25px;
+}
+
+.card .info p,
+.card .info strong,
+.card .info span{
+    width: 100%;
+    padding: 5px 10px;
+}
+
+.card .add-cart{
+    margin-top: 2px;
+    text-decoration: none;
+    color: rgb(250, 255, 181);
+    font-size: 10pt;
+    background-color: #8a63ff;
+    padding: 15px;
+    border: 1px solid #191621;
+    border-radius: 50px;
+}
+
+.card .add-cart:hover{
+    color: black;
+    background-color: rgb(250, 255, 181);
+    border: 1px solid #191621;
+    text-decoration: none; 
+}
+
+
+
+/*Propiedades de los textos*/
+.titulo{
+    color: rgb(253, 255, 230);
+    font-family: 'Delius Unicase', cursive;
+    font-size: 30pt;
+    text-align: center;
+    padding: 35px;
+}
+
+.parrafo{
+    color: rgb(253, 255, 230);
+    font-size: 14pt;
+    font-family: 'Comfortaa', cursive;
+}
+
+.slogan{
+    color: rgb(250, 255, 181);
+    text-align: center;
+    font-family: 'Delius Unicase', cursive;
+    font-size: 16pt;
+}
+
+/*Propiedades del footer*/
+
+footer{
+    align-self: flex-end;
+    color: #8a63ff;
+    background-color: #191621;
+    width: 100%;
+    height: 150px;
+    font-size: 14pt;
+    font-family: 'Comfortaa', cursive;
+    text-align: center;
+}
+footer a{
+    text-decoration: none;
+    color: #8a63ff;
+    background-color: rgb(250, 255, 181);
+    margin-bottom: 20px;
+    padding: 5px;
+    border-radius: 25px;
+}
+footer p{
+    padding-top: 10px;
+}
+
+@media screen and (max-width: 1444px){
+    .logo{
+        max-width: 50;
+    }
+    .menu_items li a{
+        font-size: 16px;
+    }
+    section{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 50px 0;
+        }
+        
+        .box{
+            padding-top: 30px;
+        width: 50%;
+        }
+}
+
+@media screen and (max-width: 1044px){
+    .menu{
+        height: 65px;
+    }
+
+    .btn_menu{
+        display: inline-flex;
+    }
+    .menu_items{
+        position: fixed;
+        width: 100vw;
+        height: calc(100% - 65px);
+        background-color: #8a63ff;
+        top: -100vh;
+        text-align: center;
+        transition:  all 0.4s ease 0s;
+        flex-direction: column;
+    }
+    .menu_items li{
+        margin: 30px 0 0 0;
+        line-height: 30px;
+    }
+
+    .menu_items li:hover{
+       background-color: rgb(250, 255, 181);
+    }
+
+    .menu_items li a{
+        font-size: 20px;
+     }
+
+     .menu_items li a:hover{
+        color: #191621;
+     }
+
+     .contenedor .contenido{
+         grid-column: 1/-1;
+     }
+
+     
+     .contenedor .sidebar{
+        grid-column: 1/-1;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 10pt;
+     }
+
+     .logop{
+         max-width: 75px;
+     }
+
+
+     .titulo{
+        color: rgb(253, 255, 230);
+        font-family: 'Delius Unicase', cursive;
+        font-size: 14pt;
+        text-align: center;
+    }
+    
+    .parrafo{
+        color: rgb(253, 255, 230);
+        font-size: 12pt;
+        font-family: 'Comfortaa', cursive;
+    }
+    
+    .slogan{
+        color: rgb(250, 255, 181);
+        text-align: center;
+        font-family: 'Delius Unicase', cursive;
+        font-size: 14pt;
+    }
+    
+    section{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 50px 0;
+        }
+        
+        .box{
+        width: 100%;
+        }
+}
+
+@media screen and (max-width: 1044px) and (orientation: landscape){
+
+    .menu_items li{
+        margin: 5px 0 0 0;
+    }
+
+    .menu_items{
+        overflow: scroll;
+        height: calc(100% - 65px);
+    }
+
+}

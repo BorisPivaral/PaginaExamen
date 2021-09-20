@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Delius+Unicase:wght@700&display=swap');
+/*Propiedades de la pagina*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a h2{
+    color: rgb(250, 255, 181);
+    font-family: 'Delius Unicase', cursive;
+}
+
+body{
+    background-image: url("../images/background.jpg");
+    font-family: 'Comfortaa', cursive;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+   
+}
+
+.submenu{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cuerpo{
+    margin:50px;
+    padding: 0;
+    width: 100%;
+}
+
+/*Propiedades del header*/
+.menu{
+    font-family: 'Delius Unicase', cursive;
+    background-color: #191621;
+    height: 75px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 5px 0 10px rgba(0, 0, 0, .6);
+}
+
+.logo{
+    max-width: 65px;
+    padding-left: 10px;
+}
+
+.menu_items{
+    display: flex;
+    list-style: none;
+    margin-right: 30px;
+}
+.menu_items li{
+    border-radius: 3px;
+    margin: 0 5px;
+}
+
+.menu_items li a{
+    padding: 7px 13px;
+    font-size: 18px;
+    text-decoration: none;
+    display: block;
+    color: rgb(250, 255, 181);
+}
+
+.login a{
+    background-color: #8a63ff;
+    border-radius: 50px;
+}
+
+
+.menu_items a:hover{
+    color:  #8a63ff;
+    background-color: rgb(250, 255, 181);
+    border-radius: 10px;
+    transition:  all 0.3s ease 0s;
+}
+
+.menu_items .active a{
+    color:  #8a63ff;
+    background-color: rgb(250, 255, 181);
+    border-radius: 10px;
+}
+
+
+.login a:hover{
+    border-radius: 50px;
+}
+
+.btn_menu{
+    margin-right: 30px;
+    font-size: 25px;
+    color:  rgb(250, 255, 181);
+    cursor: pointer;
+    display: none;
+}
+
+
+ul.show{
+    top: 65px;
+}
+
+/*Propiedades del formulario*/
+.formtitle{
+    font-family: 'Delius Unicase', cursive;
+    font-size: 2rem;
+    margin-bottom: .5em;
+    color: rgb(250, 255, 181);
+
+}
+
+.form{
+    background-color: #8a63ff;
+    margin: auto;
+    width: 90%;
+    max-width: 400px;
+    padding: 4.5em 3em;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px -5px rgb(250, 255, 181);
+    text-align: center;
+}
+
+.formparraf{
+    font-weight: 300;
+    color: rgb(250, 255, 181);
+    padding: 10px;
+}
+
+.formlink{
+    font-weight: 400;
+    color: black;
+    text-decoration: none;
+    background: none;
+}
+
+.formlink:hover{
+    font-weight: 400;
+    color: rgb(250, 255, 181);
+    text-decoration: underline;
+}
+
+.formcontainer{
+    margin-top: 3em;
+    display: grid;
+    gap: 2.5em;
+}
+
+.formgroup{
+    position: relative;
+    --color: #191621;
+}
+
+.forminput{
+    width: 100%;
+    background: rgb(255 255 255 / 80%);
+    color: black;
+    font-size: 1em;
+    padding: .6em .3em;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--color);
+    font-family: 'Comfortaa', cursive;
+    border-radius: 10px;
+}
+
+.formlabel{
+    color: #8a63ff;
+    cursor: pointer;
+    position:absolute;
+    top: 0;
+    left: 5px;
+    transform: translateY(10px);
+    transition: transform .5s, color .3s;
+}
+
+.forminput:focus + .formlabel,
+.forminput:not(:placeholder-shown)+.formlabel{
+    transform: translateY(-12px) scale(.7);
+    transform-origin: left top;
+    color: rgb(250, 255, 181);
+}
+
+.forminput:not(:focus)::placeholder{
+    color: transparent;
+}
+
+.formsubmit{
+    font-family: 'Delius Unicase', cursive;
+    background-color: rgb(250, 255, 181);
+    color: black;
+    font-weight: 300;
+    font-size: 1em;
+    padding: .8em 0;
+    border: none;
+    border-radius: 10px;
+}
+
+.formsubmit:hover{
+    
+    color:rgb(250, 255, 181);
+    background-color: #191621;
+    
+}
+
+.formline{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    color: red;
+    transform: scale(0);
+    transform: left bottom;
+    transform: transform .4s;
+}
+
+.forminput:focus ~ .formline,
+.forminput:not(:placeholder-shown) ~ .formline{
+    transform: scale(1);
+}
+.logoform{
+    max-width: 100px;
+}
+
+/*Propiedades del footer*/
+
+
+footer{
+    margin-top: 50px;
+    color: #8a63ff;
+    background-color: #191621;
+    width: 100%;
+    height: 150px;
+    align-self: flex-end;
+    font-size: 14pt;
+    font-family: 'Comfortaa', cursive;
+    text-align: center;
+}
+footer a{
+    text-decoration: none;
+    color: #8a63ff;
+    background-color: rgb(250, 255, 181);
+    margin-bottom: 20px;
+    padding: 5px;
+    border-radius: 25px;
+}
+footer p{
+    padding-top: 10px;
+}
+
+@media screen and (max-width: 1444px){
+    .logo{
+        max-width: 50;
+    }
+    .menu_items li a{
+        font-size: 16px;
+    }
+    section{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 50px 0;
+        }
+        
+        .box{
+            padding-top: 30px;
+        width: 50%;
+        }
+}
+
+@media screen and (max-width: 1044px){
+    .menu{
+        height: 65px;
+    }
+
+    .btn_menu{
+        display: inline-flex;
+    }
+    .menu_items{
+        position: fixed;
+        width: 100vw;
+        height: calc(100% - 65px);
+        background-color: #8a63ff;
+        top: -100vh;
+        text-align: center;
+        transition:  all 0.4s ease 0s;
+        flex-direction: column;
+    }
+    .menu_items li{
+        margin: 30px 0 0 0;
+        line-height: 30px;
+    }
+
+    .menu_items li:hover{
+       background-color: rgb(250, 255, 181);
+    }
+
+    .menu_items li a{
+        font-size: 20px;
+     }
+
+     .menu_items li a:hover{
+        color: #191621;
+     }
+  
+}
+
+@media screen and (max-width: 1044px) and (orientation: landscape){
+
+    .menu_items li{
+        margin: 5px 0 0 0;
+    }
+
+    .menu_items{
+        overflow: scroll;
+        height: calc(100% - 65px);
+    }
+
+}
